@@ -3,27 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <title>Monthly Subscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;600&family=Zilla+Slab:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1>Ryomi's Bookstore</h1>
-      <p>Monthly Subscription</p>
-      <p>full flexible and access to all our books!</p>
+      <div id="sub_detail">
+        <p>Monthly Subscription</p>
+        <p>full flexible and access to all our books!</p>
+      </div>
     </header>
     <main>
-      <div id="price">
-        <p>Starting $7</p>
-        <p>Recurring payment on monthly basis - cancel anytime!</p>
+      <div>
+        <p id="price">Starting $7</p>
+        <p id="price_details">
+          Recurring payment on monthly basis - cancel anytime!
+        </p>
       </div>
       <div id="contents">
         <ul>
-            <li>100,000 books</li>
-            <li>Downloadable resources</li>
-            <li>Books are updated on a monthly basis</li>
+          <li>100,000 books</li>
+          <li>Downloadable resources</li>
+          <li>Books are updated on a monthly basis</li>
         </ul>
       </div>
-      <div id="button">
-        <a href="">Join Now</a>
+      <div>
+        <a id="btn" href="">Join Now</a>
       </div>
     </main>
   </body>
