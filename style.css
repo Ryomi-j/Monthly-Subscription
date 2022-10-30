@@ -1,10 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  background-color: rgba(128, 128, 128, 0.13);
+  --color-grey-100: rgba(128, 128, 128, 0.13);
+  --color-grey-400: rgb(98, 98, 98);
+  --color-grey-600: rgb(58, 58, 58);
+  --color-grey-900: rgb(41, 41, 41);
+
+  --color-primary-200: rgba(255, 167, 249, 0.294);
+  --color-primary-400: rgba(255, 167, 249, 0.502);
+  --color-primary-600: rgba(255, 167, 249, 0.778);
+
+  --size-1: 18px;
+  --size-5: 50px;
+
+  background-color: var(--color-grey-100);
   font-family: "Krub", sans-serif;
   font-weight: 400;
 }
@@ -15,11 +27,11 @@ body {
   margin: 50px auto;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.457);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 h1 {
-  color: rgb(58, 58, 58);
+  color: var(--color-grey-600);
   padding: 30px 50px 0px 50px;
   margin: 10px 0;
   font-family: "Zilla Slab", serif;
@@ -27,23 +39,23 @@ h1 {
 }
 
 #sub_detail {
-  color: rgb(98, 98, 98);
+  color: var(--color-grey-400);
   text-align: left;
   padding: 0 50px;
   margin: 10px 0 30px 0;
 }
 
 #price {
-  color: rgb(41, 41, 41);
-  background-color: rgba(255, 167, 249, 0.502);
+  color: var(--color-grey-900);
+  background-color: var(--color-primary-400);
   text-align: center;
   margin: 30px auto 10px auto;
-  font-size: 50px;
+  font-size: var(--size-5);
   font-weight: 600;
 }
 
 #price_details {
-  color: rgb(134, 134, 134);
+  color: var(--color-grey-400);
   text-align: center;
   margin: 10px 0 30px 0;
   padding: 0 50px;
@@ -63,13 +75,14 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(58, 58, 58);
+  color: var(--color-grey-600);
   padding: 2px;
   margin: 5px;
 }
 
 #btn {
-  color:  rgb(58, 58, 58);
+  color: var(--color-grey-600);
+  background-color: var(--color-primary-600);
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -77,13 +90,13 @@ li {
   padding: 10px;
   margin: 0 0 30px 0;
   border: 2px solid rgb(224, 224, 224);
-  font-size: 18px;
+  font-size: var(--size-1);
   font-weight: 600;
   border-radius: 10px;
 }
 
 #btn:hover {
-  color:  rgb(58, 58, 58);
-  background-color: rgba(242, 255, 0, 0.773);
-  border: 2px solid rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+  background-color: var(--color-primary-200);
+  border: 2px solid var(--color-primary-600);
 }
