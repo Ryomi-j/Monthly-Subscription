@@ -74,6 +74,11 @@ h1 {
   text-align: left;
 }
 
+.icon {
+    width: 20px;
+    padding-right: 10px;
+}
+
 ul {
   display: flex;
   flex-direction: column;
@@ -81,6 +86,7 @@ ul {
 }
 
 li {
+    display: flex;
   list-style: none;
   color: var(--color-grey-600);
   padding: 2px;
